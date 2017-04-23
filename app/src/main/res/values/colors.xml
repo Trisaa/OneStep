@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00bbd5</color>
+    <color name="colorPrimaryDark">#0098a6</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="attraction_selected">#ffffff</color>
+    <color name="attraction_unselected">#89000000</color>
+    <color name="account_update_submit">#03b875</color>
+</resources>

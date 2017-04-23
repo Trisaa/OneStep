@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/traffic_title_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="机场交通"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#e8e8e8" />
+
+    <TextView
+        android:id="@+id/traffic_describe_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <RelativeLayout
+        android:id="@+id/traffic_describe_detail_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/traffic_item_bg"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/traffic_describe_detail_txv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/traffic_airport_describe" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/traffic_url_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/common_list_item_bg_transparent"
+        android:drawableLeft="@mipmap/traffic_link"
+        android:drawablePadding="6dp"
+        android:text="机场网址"
+        android:textColor="@color/colorPrimary" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:foreground="@drawable/common_list_item_bg_transparent">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/attraction_img"
+        app:layout_aspectRatio="160%"
+        app:layout_widthPercent="50%" />
+
+    <TextView
+        android:id="@+id/attraction_name_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/attraction_img"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/attraction_img"
+        android:text="丽江古城"
+        android:textSize="16sp" />
+
+    <RatingBar
+        android:id="@+id/attraction_ratebar"
+        style="@style/RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/attraction_img"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/attraction_img"
+        android:numStars="5"
+        android:rating="4.5" />
+
+    <TextView
+        android:id="@+id/attraction_describe_txv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/attraction_ratebar"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@id/attraction_img"
+        android:text="地标建筑"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/attraction_img"
+        android:layout_marginTop="16dp"
+        android:background="#e8e8e8" />
+
+</android.support.percent.PercentRelativeLayout>

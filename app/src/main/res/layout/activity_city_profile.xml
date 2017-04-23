@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/city_profile_cover_img"
+                android:background="@mipmap/city_profile"
+                app:layout_aspectRatio="200%"
+                app:layout_widthPercent="100%" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/city_profile_cover_img"
+                android:layout_marginTop="16dp"
+                android:text="@string/city_profile"
+                android:textSize="15sp" />
+        </android.support.percent.PercentRelativeLayout>
+    </ScrollView>
+</LinearLayout>
