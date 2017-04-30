@@ -6,4 +6,9 @@
         android:icon="@mipmap/location_ic"
         android:title="Location"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_local"
+        android:icon="@mipmap/ic_friend"
+        android:title="Local"
+        app:showAsAction="ifRoom" />
 </menu>

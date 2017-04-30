@@ -206,14 +206,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginLeft="48dp"
-                android:background="#e8e8e8" />
+                android:background="#e8e8e8"
+                android:visibility="gone" />
 
             <RelativeLayout
                 android:id="@+id/user_friend_layout"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginTop="0dp"
-                android:foreground="@drawable/common_list_item_bg_transparent">
+                android:foreground="@drawable/common_list_item_bg_transparent"
+                android:visibility="gone">
 
                 <TextView
                     android:layout_width="match_parent"

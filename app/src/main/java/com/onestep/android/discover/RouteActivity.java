@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
 import com.onestep.android.R;
+import com.onestep.android.account.FriendActivity;
 import com.onestep.android.common.base.BaseActivity;
 import com.onestep.android.main.model.GuideItem;
 
@@ -47,7 +48,7 @@ public class RouteActivity extends BaseActivity {
             , R.string.route_shuheguzhen_others, R.string.route_shuhesifangjie_others, R.string.route_qinglongqiao_others, R.string.route_longquansi_others, R.string.route_chamagudao_others
             , R.string.route_shidigongyuan_others};
     private static final int[] HOT_PLACES_TIPS = new int[]{R.string.route_shizishan_tips, R.string.route_mufu_tips, R.string.route_sifangjie_tips};
-    public static final double[] HOT_PLACES_LATITUDE = new double[]{101.0629, 100.2410, 100.2411, 100.2609, 100.2414, 100.2512, 100.2120, 100.2109, 100.2103, 100.2102, 100.2118, 100.1526};
+    public static final double[] HOT_PLACES_LATITUDE = new double[]{101.0629, 100.3410, 100.2411, 100.2609, 100.2414, 100.2512, 100.2120, 100.2109, 100.2103, 100.2102, 100.2118, 100.1526};
     public static final double[] HOT_PLACES_LONGITUDE = new double[]{26.4432, 26.8750, 26.8786, 27.1047, 27.1356, 27.1316, 26.9241, 26.9277, 26.9280, 26.9310, 26.9283, 26.8680};
     @BindView(R.id.hot_place_recyclerview)
     RecyclerView mRecyclerView;
@@ -81,6 +82,8 @@ public class RouteActivity extends BaseActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_location) {
             RouteMapActivity.start(this);
+        } else if (item.getItemId() == R.id.action_local) {
+            FriendActivity.start(this);
         }
         return super.onOptionsItemSelected(item);
     }

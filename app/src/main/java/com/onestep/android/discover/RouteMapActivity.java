@@ -163,7 +163,7 @@ public class RouteMapActivity extends BaseActivity {
         List<LatLng> points = new ArrayList<LatLng>();
         for (int i = start; i < end; i++) {
             if (start == 11) {
-                points.add(new LatLng(HOT_PLACES_LONGITUDE[i], HOT_PLACES_LATITUDE[i]));
+                points.add(new LatLng(HOT_PLACES_LONGITUDE[i]-0.001, HOT_PLACES_LATITUDE[i]));
             }
             points.add(new LatLng(HOT_PLACES_LONGITUDE[i], HOT_PLACES_LATITUDE[i]));
         }

@@ -229,7 +229,7 @@ public class UserActivity extends BaseActivity {
 
     @OnClick(R.id.user_friend_layout)
     public void toFriend() {
-        FriendActivity.start(this);
+        //FriendActivity.start(this);
     }
 
     @OnClick(R.id.user_nickname_layout)
